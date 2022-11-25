@@ -11,16 +11,16 @@ body {
   padding: 0;
 }
 
-#analog-clock {
+.analog-clock {
   margin-top: 80px;
   display: flex;
   justify-content: center;
   position: relative;
 }
-#analog-clock .analog-clock {
+.analog-clock .analog-clock-img {
   max-width: 900px;
 }
-#analog-clock .dot {
+.analog-clock .dot {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -31,27 +31,27 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#analog-clock .hand {
+.analog-clock .hand {
   position: absolute;
   width: 18px;
   border-radius: 10px;
   transform-origin: bottom;
   transition: rotate 0.25s ease-in-out;
 }
-#analog-clock .hand.minute {
+.analog-clock .hand.minute {
   background-color: rgb(54, 255, 94);
   top: 160px;
   height: 290px;
   width: 10px;
   z-index: 40;
 }
-#analog-clock .hand.hour {
+.analog-clock .hand.hour {
   background-color: rgb(255, 41, 41);
   height: 180px;
   top: 270px;
   z-index: 50;
 }
-#analog-clock .hand.second {
+.analog-clock .hand.second {
   background-color: rgb(248, 255, 54);
   height: 450px;
   top: 70px;
