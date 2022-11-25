@@ -1,0 +1,71 @@
+@use "extra";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#analog-clock {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    $width: 900px;
+
+    .analog-clock {
+        max-width: $width;
+    }
+
+    .dot {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #D5e0e0;
+        border-radius: 50%;
+        z-index: 10000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hand {
+        position: absolute;
+        width: 18px;
+        border-radius: 10px;
+        transform-origin: bottom;
+        transition: rotate 0.25s ease-in-out;
+
+        &.minute {
+            background-color: rgb(54, 255, 94);
+            top: 160px;
+            height: 290px;
+            // rotate: 90deg;
+            width: 10px;
+            z-index: 40;
+        }
+
+        &.hour {
+            background-color: rgb(255, 41, 41);
+            height: 180px;
+            top: 270px;
+            z-index: 50;
+        }
+
+        &.second {
+            background-color: rgb(248, 255, 54);
+            // Offset the height by the transform origin. I need to make variables to control it
+            height: 450px;
+            // The clock its self it weird so i have to
+            top: 70px;
+            rotate: 70deg;
+            width: 5px;
+            transform-origin: 0 380px;
+
+
+        }
+    }
+}

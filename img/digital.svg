@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 530 255" style="enable-background:new 0 0 530 255;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:none;stroke:#D5E0E0;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:#D5E0E0;}
+	.st3{fill:#001030;}
+</style>
+<g id="Clock_Face">
+</g>
+<g id="Ticks">
+	<path class="st3" d="M468,217H62V99.5C62,74.9,81.9,55,106.5,55h317c24.6,0,44.5,19.9,44.5,44.5V217z"/>
+</g>
+</svg>
